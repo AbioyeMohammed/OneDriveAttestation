@@ -17,14 +17,14 @@ $connectionName = "AzureRunAsConnection"
 $servicePrincipalConnection = Get-AutomationConnection -Name $connectionName 
 
 #logOn credentials
-    $tenant               = "m365x685435"                               # O365 TENANT NAME
+    $tenant               = "xxxxxxxxxxxxxx"                               # O365 TENANT NAME
     $clientId             = $servicePrincipalConnection.ApplicationID   # AAD APP PRINCIPAL CLIENT ID
 
 #Stored as a variable
-    $appPrincipalPwdVar   = 'AppPrincipalCertPassword'                  # CERT PASSWORD VARIABLE
+    $appPrincipalPwdVar   = 'Enter the name of the password variable stored in Automation account or enter a string '                  # CERT PASSWORD VARIABLE
 
 #stored as a certificate
-    $appPrincipalCertVar  = 'appPrincipalCert'                          # CERT NAME VARIABLE
+    $appPrincipalCertVar  = 'Enter the name of the .pfx certificate uploaded to your automation account > certicates'                          # CERT NAME VARIABLE
 
 $VerbosePreference = "Continue"
 
